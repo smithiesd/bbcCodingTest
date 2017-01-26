@@ -15,14 +15,6 @@ public class GameStateTest {
     }
 
     @Test
-    public void testEquals() {
-        String input = "...\n***\n...";
-        GameState s1 = new GameStateImpl(input);
-        GameState s2 = new GameStateImpl(input);
-        assertTrue("Two GameState objects constructed from the same input should be equal",s1.equals(s2));
-    }
-
-    @Test
     public void testRowColCounts() {
         String input = "...\n***\n..*";
         GameState testState = new GameStateImpl(input);

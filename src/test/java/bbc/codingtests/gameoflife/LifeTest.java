@@ -12,11 +12,10 @@ public class LifeTest {
 	@Test
 	public void testEmptyGrid() {
 		String emptyStateInput = "...\n...\n...";
-		GameState expectedState = new GameStateImpl(emptyStateInput);
 
 		Life testLife = new LifeImpl();
 		GameState emptyState = new GameStateImpl(emptyStateInput);
-		assertEquals("An empty grid should stay the same", expectedState, testLife.evolve(emptyState));
+		assertEquals("An empty grid should stay the same", emptyStateInput, testLife.evolve(emptyState).toString());
 	}
 
 	//TODO implement further tests for the other cases in the instructions

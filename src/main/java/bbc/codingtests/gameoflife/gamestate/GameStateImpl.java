@@ -20,16 +20,6 @@ public class GameStateImpl implements GameState {
         throw new UnsupportedOperationException("Please implement the 'isCellAliveAt' method");
     }
 
-    //TODO complete this method according to the requirements
-    //TODO two
-    @Override
-    public boolean equals(Object other) {
-        if(other == this) return true;
-        if(other == null) return false;
-        if(!(other instanceof GameStateImpl)) return false;
-        throw new UnsupportedOperationException("Please implement the 'equals' method");
-    }
-
     @Override
     public int getRows() {
         throw new UnsupportedOperationException("Please implement the 'getRows' method");
